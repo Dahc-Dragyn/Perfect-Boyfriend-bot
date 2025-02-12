@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+google-generativeai
+pydantic
+python-dotenv
+cachetools
+requests
+Jinja2
+better-profanity
+google-cloud-storage
