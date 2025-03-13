@@ -1,0 +1,12 @@
+# Dev environment
+pip
+autopep8
+fastapi
+uvicorn[standard]
+google-generativeai
+pydantic
+python-dotenv
+cachetools
+requests
+Jinja2
+better-profanity

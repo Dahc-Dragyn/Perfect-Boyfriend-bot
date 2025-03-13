@@ -1,0 +1,116 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FCEAE8, #F9DCC4);
+    color: #4A4E69;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #FF6B6B;
+    font-size: 2em; /* Slightly smaller heading */
+    margin-bottom: 20px;
+}
+
+#chatbox {
+    background: #FFFFFF;
+    padding: 20px; /* Reduced padding */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Occupy most of the screen width */
+    max-width: 600px; /* Still a maximum width */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Space between chatbox and input */
+}
+
+#messages {
+    height: 300px; /* Reduced height */
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #FFF3F3;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Reduced margin */
+    box-sizing: border-box;
+}
+
+/* Scrollbar styling - same as before */
+#messages::-webkit-scrollbar {
+    width: 12px;
+}
+
+#messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+#messages::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.user, .bot {
+    padding: 10px;
+    margin: 5px 0; /* Reduced margin */
+    border-radius: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 75%;
+}
+
+.user {
+    background-color: #D8E2DC;
+    text-align: right;
+    margin-left: auto;
+}
+
+.bot {
+    background-color: #FFE4E1;
+    text-align: left;
+    margin-right: auto;
+}
+
+#input-container {
+    display: flex;
+    width: 90%; /* Match chatbox width */
+    max-width: 600px;
+    gap: 10px;
+    box-sizing: border-box; /* Important for width calculation */
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#send-button:hover {
+    background-color: #FF4B4B;
+}
